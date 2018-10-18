@@ -1,0 +1,64 @@
+body{
+    color: #111;
+    font-family: sans-serif;
+}
+body.login, body.login .wrapper{
+    background: #dadada;
+}
+
+div.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.7);
+    background-image: url($image-path + "loading.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+
+    z-index: 99999;
+}
+
+.skin-black .main-header > .logo, .skin-black .main-header > .logo:hover {
+    background-color: #222d32;
+    border-right: 0;
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td{vertical-align: middle}
+
+input[required], select[required], textarea[required], .selection.dropdown[required], .mx-datepicker[required] input {
+    text-indent: 10px;
+    background-image: url($image-path + "required_field.png")!important;
+    background-repeat: no-repeat!important;
+    background-position: 5px 5px!important;
+    background-size: 7px 7px!important;
+}
+
+.imagens{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagens-table{
+    width: 115px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header .sidebar-toggle {
+    font-family: Font Awesome\ 5 Free !important;
+    padding: 18px 15px !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu {
+    padding: 5px 5px 5px !important;
+}
